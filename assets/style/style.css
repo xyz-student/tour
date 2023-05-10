@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+
+    padding: 0px;
+}
+ 
+.google_fonts {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.drop1 ul {
+
+    position: absolute;
+    top: 120%;
+    width: 300px;
+    left: 0%;
+    background-color: white;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 50;
+}
+
+.drop1 {
+    position: relative;
+}
+
+.drop1:hover ul {
+    top: 100%;
+    opacity: 1;
+
+}
+
+/* bg */
+.bg {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.507)), url("/assets/image/banner-1.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.input_style {
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.input_style input {
+    width: 100%;
+    border: none;
+    padding: 15px 10px 15px 15px;
+    border-radius: 10px;
+}
+
+.input_style input:focus {
+    outline: none;
+}
+
+.sub_button {
+    display: inline-block;
+    height: 55px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ff7c5b;
+
+    overflow: hidden;
+}
+
+.sub_button input {
+    background-color: transparent;
+    color: white;
+}
+
+.over {
+    top: 100%;
+    left: 49%;
+    height: 10px;
+    width: 10px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.sub_button:hover .over {
+    top: 0%;
+
+    transform: scale(27);
+    background-color: #00000091;
+
+}
+
+.scroll_bg {
+    background-size: cover;
+    animation: re 15s infinite linear;
+    height: 100px;
+    width: 100%;
+    background-image: url('/assets/image/shape-1.png');
+}
+
+
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 70px;
+}
+
+/* overlau cards */
+.img {
+    height: 180px;
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.over_img {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.384);
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: scale(0.1);
+
+}
+
+.cards_container:hover .over_img {
+    animation: over 0.4s linear;
+
+}
+
+@keyframes over {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(10);
+        opacity: 1;
+
+    }
+}
+
+.cards_container img {
+    transform: scale(1);
+    transition: 0.4s;
+   
+}
+
+.cards_container:hover img {
+    transform: scale(1.1);
+ 
+
+}
+
+.icon-1:before {
+    color: #ff7c5b;
+}
+
+.margin {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.over_image {
+    margin: auto;
+    height: 380px;
+    width: 70%;
+   overflow: hidden;
+}
+.transition_img{
+    background: rgb(2,0,36);
+    background: linear-gradient(148deg, rgba(2,0,36,0) 31%, rgba(140,140,156,0) 31%, rgba(255, 255, 255, 0.795) 50%, rgba(184,243,255,0) 89%, rgba(0,212,255,0) 89%);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    transition: 0.3s;
+ border-radius: 20%;
+ opacity: 0;
+}
+
+ .cards_hover:hover .transition_img{
+    height: 700px;
+    width: 700px;
+ opacity: 1;
+
+ }
+
+ .hover_btn{
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #ff7c5b;
+    text-transform: capitalize;
+    transition: 0.3s;
+    background-color: #ff7c5b;
+    letter-spacing: 0px;
+    transform: translate(0px);
+ }
+ .hover_btn:hover{
+    background-color: rgb(0, 0, 0);
+    
+    border: #ff7c5b;
+    border: 2px solid #000000;
+    letter-spacing: 1px;
+    transform: translate(10px);
+box-shadow: 5px 5px 30px rgb(85, 76, 76);
+
+ }
+ footer{
+    padding: 30px  0px 30px 0px;
+    background-color: #14161c;
+ }
+ .footer_bg{
+    background-image:url("/assets/image/shape-11.png");
+    /* background-size: cover; */
+    width: 100%;
+    height: 300px; 
+    background-position:   right;
+    animation: w 12s infinite linear !important; 
+   
+
+ }
+ @keyframes w {
+    0% {
+        background-position: center;
+    }
+
+    100% {
+        background-position: right;
+ 
+
+    }
+}
