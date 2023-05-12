@@ -3,16 +3,21 @@
 
     padding: 0px;
 }
- 
+
 .google_fonts {
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
+}
+
+.sm_collapse li {
+    padding: 10px 0px 10px 0px;
 }
 
 .drop1 ul {
 
     position: absolute;
     top: 120%;
+
     width: 300px;
     left: 0%;
     background-color: white;
@@ -25,10 +30,19 @@
     position: relative;
 }
 
-.drop1:hover ul {
+.home_hover:hover ul {
     top: 100%;
     opacity: 1;
 
+}
+.home_hover ul li:hover a{
+  color: #ff7c5b !important;
+  transition: 0.3s;
+ }
+.home_hover ul li a{
+  font-size: 15px;
+  /* color: #000000a0 !important; */
+  font-weight:500 !important;
 }
 
 /* bg */
@@ -93,6 +107,8 @@
     animation: re 15s infinite linear;
     height: 100px;
     width: 100%;
+    animation: w 12s infinite linear !important;
+
     background-image: url('/assets/image/shape-1.png');
 }
 
@@ -149,12 +165,12 @@
 .cards_container img {
     transform: scale(1);
     transition: 0.4s;
-   
+
 }
 
 .cards_container:hover img {
     transform: scale(1.1);
- 
+
 
 }
 
@@ -171,29 +187,30 @@
     margin: auto;
     height: 380px;
     width: 70%;
-   overflow: hidden;
+    overflow: hidden;
 }
-.transition_img{
-    background: rgb(2,0,36);
-    background: linear-gradient(148deg, rgba(2,0,36,0) 31%, rgba(140,140,156,0) 31%, rgba(255, 255, 255, 0.795) 50%, rgba(184,243,255,0) 89%, rgba(0,212,255,0) 89%);
+
+.transition_img {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(148deg, rgba(2, 0, 36, 0) 31%, rgba(140, 140, 156, 0) 31%, rgba(255, 255, 255, 0.795) 50%, rgba(184, 243, 255, 0) 89%, rgba(0, 212, 255, 0) 89%);
     height: 30px;
     width: 30px;
     position: absolute;
     top: -10%;
     left: -10%;
     transition: 0.3s;
- border-radius: 20%;
- opacity: 0;
+    border-radius: 20%;
+    opacity: 0;
 }
 
- .cards_hover:hover .transition_img{
+.cards_hover:hover .transition_img {
     height: 700px;
     width: 700px;
- opacity: 1;
+    opacity: 1;
 
- }
+}
 
- .hover_btn{
+.hover_btn {
     padding: 10px;
     width: 200px;
     border: 2px solid #ff7c5b;
@@ -202,39 +219,98 @@
     background-color: #ff7c5b;
     letter-spacing: 0px;
     transform: translate(0px);
- }
- .hover_btn:hover{
+}
+
+.hover_btn:hover {
     background-color: rgb(0, 0, 0);
-    
+
     border: #ff7c5b;
     border: 2px solid #000000;
     letter-spacing: 1px;
     transform: translate(10px);
-box-shadow: 5px 5px 30px rgb(85, 76, 76);
+    box-shadow: 5px 5px 30px rgb(85, 76, 76);
 
- }
- footer{
-    padding: 30px  0px 30px 0px;
+}
+
+footer {
+    padding: 50px 0px 30px 0px;
     background-color: #14161c;
- }
- .footer_bg{
-    background-image:url("/assets/image/shape-11.png");
+}
+
+.footer_bg {
+    background-image: url("/assets/image/shape-11.png");
     /* background-size: cover; */
     width: 100%;
-    height: 300px; 
-    background-position:   right;
-    animation: w 12s infinite linear !important; 
-   
+    /* height: 300px;  */
+    background-position: right;
+    animation: w 12s infinite linear !important;
 
- }
- @keyframes w {
+
+}
+
+@keyframes w {
     0% {
         background-position: center;
     }
 
     100% {
         background-position: right;
- 
+
 
     }
+}
+
+
+.footer_heading h3:hover {
+    color: #ff7c5b;
+    transition: 0.4s;
+}
+
+.icon {
+    transform: translateY(0px);
+    transition: 0.3s;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon:hover {
+    background-color: #ff7c5b;
+    transform: translateY(-10px);
+}
+
+.footer_heading li:hover a {
+    transition: 0.3s;
+    color: #ef9984 !important;
+}
+.footerimg{
+    background-image: url("/assets/image/shape-10.png");
+    height:   100px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+  
+}
+
+ 
+
+/*  */
+@media screen and (max-width:576px){
+    .over_image{
+        /* height: 300px; */
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width:320px){
+    .over_image{
+        height: 300px;
+        width: 100%;
+    }
+    
 }

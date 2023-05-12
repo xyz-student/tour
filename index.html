@@ -27,7 +27,7 @@
 
     <header>
         <!-- navbar {bootstrap} start here for sm screen -->
-        <nav class="navbar navbar-expand-lg d-lg-none navbar-light d-sm-block d-md-none bg-light">
+        <nav class="navbar navbar-expand-lg   d-lg-none navbar-light d-sm-block d-md-block  ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src=" assets/image/logo-3.png" height="30px" width="100px"
                         alt=""></a>
@@ -72,51 +72,68 @@
         <!-- sm navbar end here -->
 
         <!-- navbar lg start here -->
-        <nav class="navbar navbar-expand-lg bg-light navbar-light d-sm-none d-md-block d-lg-block p-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src=" assets/image/logo-3.png" height="30px" width="100px"
+        <nav class="navbar p-0 navbar-expand-sm d-none bg-light navbar-light d-sm-none d-md-none d-lg-block  ">
+            <div class="container">
+                <a class="navbar-brand  " href="#"><img src=" assets/image/logo-3.png" height=" " width="100px"
                         alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
-                        <li class="nav-item mx-2 ">
-                            <a class="nav-link text-capitalize active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item mx-2 drop1 position-relative ">
-                            <a class="nav-link text-capitalize" href="#">home</a>
+                <div class="collapse sm_collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
+
+                        <li class="nav-item  mx-2 drop1 position-relative home_hover">
+                            <a class="nav-link text-capitalize  fw-bold   " href="#">home</a>
                             <ul
-                                class=" mx-2 shadow-lg p-3 border-top border-warning border-3 rounded-top list-unstyled">
-                                <li><a href="" class="text-decoration-none">drosfsdfsdfsdfsdfp</a></li>
-                                <li><a href="" class="text-decoration-none">drop</a></li>
-                                <li><a href="" class="text-decoration-none">drop</a></li>
-                                <li><a href="" class="text-decoration-none">drop</a></li>
+                                class=" mx-2 shadow-lg  py-3  border-top border-warning border-3 rounded-top list-unstyled">
+                                <li class="p-3 py-1"> <a href="" class="text-dark text-decoration-none ">Dropdown 1</a>
+                                </li>
+                                <li class="p-3 py-1"> <a href="" class="text-dark text-decoration-none ">Dropdown 2</a>
+                                </li>
+                                <li class="p-3 py-1"> <a href="" class="text-dark text-decoration-none ">Dropdown 3</a>
+                                </li>
+                                <li class="p-3 py-1"> <a href="" class="text-dark text-decoration-none ">Dropdown 4</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link text-capitalize " href="#">destination</a>
+                            <a class="nav-link text-capitalize fw-bold" href="#">destination</a>
                         </li>
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link text-capitalize " href="#">tours</a>
+                            <a class="nav-link text-capitalize fw-bold" href="#">destination</a>
                         </li>
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link text-capitalize " href="#">elements</a>
+                            <a class="nav-link text-capitalize fw-bold" href="#">tours</a>
                         </li>
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link text-capitalize " href="#">blogs</a>
+                            <a class="nav-link text-capitalize fw-bold" href="#">elements</a>
                         </li>
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link text-capitalize " href="#">contact</a>
+                            <a class="nav-link text-capitalize fw-bold" href="#">blogs</a>
                         </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link text-capitalize fw-bold" href="#">contact</a>
+                        </li>
+
+                        <li class="nav-item mx-2 ">
+
+                        </li>
+
 
                     </ul>
-                    <form class="d-flex" role="search">
+                    <div class="right">
+                        <li class="nav-item mx-2 d-flex">
+                            <a class="icon text-decoration-none text-white mx-1 " style="background-color:#ff7c5bbd"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a class="icon text-decoration-none text-white  mx-1" style="background-color: #ff7c5bbd"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </div>
 
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <!--  -->
+
                 </div>
             </div>
         </nav>
@@ -139,16 +156,16 @@
                             </div>
                         </div>
                         <div class="row input_style p-4 my-3">
-                            <div class="col-6 col-sm-6 col-md-3 mb-3  ">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3  ">
                                 <input type="text" placeholder="Where to?">
                             </div>
-                            <div class="col-6 col-sm-6 col-md-3 mb-3  ">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3  ">
                                 <input type="text" placeholder="When?">
                             </div>
-                            <div class="col-6 col-sm-6 col-md-3 mb-3  ">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3  ">
                                 <input type="text" placeholder="Select Type?">
                             </div>
-                            <div class="col-6 col-sm-6 col-md-3 mb-3  ">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3  ">
                                 <a href="#" class="sub_button position-relative ">
                                     <input type="submit" class="" value="Find Now">
                                     <div class="over position-absolute  "></div>
@@ -159,7 +176,7 @@
                 </div>
             </div>
             <div class="scroll_bg position-absolute bottom-0"></div>
-            <div class="scroll_bg position-absolute  " style="top:0% ; transform: rotate(180deg);"></div>
+            <!-- <div class="scroll_bg position-absolute  " style="top:0% ; transform: rotate(180deg);"></div> -->
 
         </div>
         <!-- transfition -->
@@ -184,7 +201,7 @@
                             </div>
                             <div class="position-absolute   start-50 translate-middle    " style="top:100%;">
                                 <div class="box ">
-                                    <i class="fa-brands fa-facebook fs-2  icon-1"></i>
+                                    <i class="fa-sharp fa-solid fa-truck-fast fs-2" style="color:#ff7c5b"></i>
                                 </div>
                             </div>
 
@@ -201,7 +218,7 @@
                             </div>
                             <div class="position-absolute   start-50 translate-middle    " style="top:100%;">
                                 <div class="box ">
-                                    <i class="fa-brands fa-facebook fs-2  icon-1"></i>
+                                    <i class="fa-sharp fa-solid fa-building-columns fs-3" style="color:#ff7c5b"></i>
                                 </div>
                             </div>
 
@@ -218,7 +235,7 @@
                             </div>
                             <div class="position-absolute   start-50 translate-middle    " style="top:100%;">
                                 <div class="box ">
-                                    <i class="fa-brands fa-facebook fs-2  icon-1"></i>
+                                    <i class="fa-solid fa-plane fs-3" style="color:#ff7c5b"></i>
                                 </div>
                             </div>
 
@@ -235,7 +252,7 @@
                             </div>
                             <div class="position-absolute   start-50 translate-middle    " style="top:100%;">
                                 <div class="box ">
-                                    <i class="fa-brands fa-facebook fs-2  icon-1"></i>
+                                    <i class="fa-solid fa-mountain-sun fs-3" style="color:#ff7c5b"></i>
                                 </div>
                             </div>
 
@@ -253,22 +270,22 @@
     <section class="margin">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 cards_hover  mb-5  text-center">
+                <div class="col-12 col-md col-lg-6 cards_hover  mb-5  text-center">
                     <div class="over_image position-relative p-4 shadow-lg">
                         <img src="./assets/image/about-1.jpg" height="auto" width="100%" alt="">
                         <div class="transition_img"></div>
                     </div>
                     <div class="row">
-                        <div class="col-6 mt-3">
+                        <div class="col-12 col-md-6 p-5 mt-3">
                             <img src="./assets/image/about-2.jpg" height="auto" width="100%" alt="">
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <h3 class="fw-bold mt-5 h4 google_fonts">Find Your Best Destination</h3>
                             <i class="fa-regular display-5 mt-3 fa-circle-play" style="color:#ff7c5b;"></i>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 mb-5">
+                <div class="col-12 col-md col-lg-6 mb-5">
                     <div class="row">
                         <div class="col-10 content">
                             <div class="  google_fonts">
@@ -366,71 +383,119 @@
     </section>
 
     <!-- footer -->
+        <div class="footerimg     "></div>
 
-    <footer>
+    <footer class=" ">
         <div class="footer_bg text-light">
-        <div class="container ">
-            <div class="row">
-                <div class="col-12 col-lg-3 my-3">
-                    <a href=""><img src="./assets/image/logo-3.png" height="auto" width="40%" alt=""></a>
-                    <p class="mt-3   "  style="color:#aeb1b8">Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in cididunt ut labore dolore
-                        magna aliqua enim.</p>
-                </div>
-                <div class="col-12 col-lg-3  my-3">
-                   <div class="row justify-content-md-start justify-content-sm-start justify-content-lg-center">
-                    <div class="col-7">
-                        <h3 class="h4 fw-bold">Services</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">about us</a></li>
-                            <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">how it works</a></li>
-                            <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">our blogs</a></li>
-                            <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">our Services</a></li>
-                            <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">contact us</a></li>
-                        </ul>
+            <div class="container ">
+                <div class="row px-5  ">
+                    <div class="col-12 col-md-3 my-3">
+                        <a href=""><img src="./assets/image/logo.png" height="auto" width="40%" alt=""></a>
+                        <p class="mt-3   " style="color:#aeb1b8;text-align: justify;">Lorem ipsum dolor amet consetetur
+                            adi pisicing elit sed
+                            eiusm tempor in cididunt ut labore dolore
+                            magna aliqua enim.</p>
+                        <div class="icon_box  d-flex">
+                            <a class="icon text-decoration-none text-white mx-1"><i
+                                    class="fa-brands fa-internet-explorer"></i></a>
+                            <a class="icon text-decoration-none text-white mx-1"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a class="icon text-decoration-none text-white mx-1"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a class="icon text-decoration-none text-white mx-1"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </div>
                     </div>
-                   </div>
-                </div>
-                <div class="col-12 col-lg-3  my-3 ">
-                    <h3 class="h4 fw-bold">Services</h3>
-
-                    <div class="row  mt-3">
-                        <div class="col-5 col-lg-10  ">
-                            <div class="row g-2">
-                                <div class="col-4 mt-2">
-                                    <img src="./assets/image/footer-gallery-1.jpg" height="auto" width="100%" alt="">
-                                </div>
-                                <div class="col-4 mt-2">
-                                    <img src="./assets/image/footer-gallery-1.jpg" height="auto" width="100%" alt="">
-                                </div>
-                                <div class="col-4 mt-2">
-                                    <img src="./assets/image/footer-gallery-1.jpg" height="auto" width="100%" alt="">
-                                </div>
-                                <div class="col-4 mt-2">
-                                    <img src="./assets/image/footer-gallery-1.jpg" height="auto" width="100%" alt="">
-                                </div>
-                                <div class="col-4 mt-2">
-                                    <img src="./assets/image/footer-gallery-1.jpg" height="auto" width="100%" alt="">
-                                </div>
-                                <div class="col-4 mt-2">
-                                    <img src="./assets/image/footer-gallery-1.jpg" height="auto" width="100%" alt="">
-                                </div>
-
+                    <div class="col-12 col-md-3  my-3">
+                        <div class="row justify-content-md-start justify-content-sm-start justify-content-lg-center">
+                            <div class="col-7 footer_heading">
+                                <h3 class="h4 fw-bold ">Gallery</h3>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="my-2"><a href="" style="color:#aeb1b8;"
+                                            class=" text-decoration-none">about us</a></li>
+                                    <li class="my-2"><a href="" style="color:#aeb1b8;"
+                                            class=" text-decoration-none text-capitalize">how
+                                            it works</a></li>
+                                    <li class="my-2"><a href="" style="color:#aeb1b8;"
+                                            class=" text-decoration-none text-capitalize">our
+                                            blogs</a></li>
+                                    <li class="my-2"><a href="" style="color:#aeb1b8;"
+                                            class=" text-decoration-none text-capitalize">our
+                                            Services</a></li>
+                                    <li class="my-2"><a href="" style="color:#aeb1b8;"
+                                            class=" text-decoration-none text-capitalize">contact us</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3 my-3">
-                    <h3 class="h4 fw-bold">contact us</h3>
-                    <ul class="list-unstyled mt-3">
-                        <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</a></li>
-                        <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">+2(305) 587-3407</a></li>
-                        <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none">info@example.com</a></li>
- 
-                    </ul>
+                    <div class="col-12 col-md-3 footer_heading  my-3 ">
+                        <h3 class="h4 fw-bold">Services</h3>
+
+                        <div class="row  mt-3">
+                            <div class="col-12 col-sm-6 col-md-7 col-lg-10  ">
+                                <div class="row g-2">
+                                    <div class="col-4 col-md-12 col-lg-4 mt-2">
+                                        <img src="./assets/image/footer-gallery-1.jpg" class="rounded" height="auto"
+                                            width="100%" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 mt-2">
+                                        <img src="./assets/image/footer-gallery-2.jpg" class="rounded" height="auto"
+                                            width="100%" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 mt-2">
+                                        <img src="./assets/image/footer-gallery-3.jpg" class="rounded" height="auto"
+                                            width="100%" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 mt-2">
+                                        <img src="./assets/image/footer-gallery-4.jpg" class="rounded" height="auto"
+                                            width="100%" alt="">
+                                    </div>
+                                    <div class="col-4  col-md-12 col-lg-4 mt-2">
+                                        <img src="./assets/image/footer-gallery-5.jpg" class="rounded" height="auto"
+                                            width="100%" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 mt-2">
+                                        <img src="./assets/image/footer-gallery-1.jpg" height="auto" width="100%"
+                                            alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 footer_heading my-3">
+                        <h3 class="h4 fw-bold">Contact Us</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li class="my-2  "><a href="" style="color:#aeb1b8;" class=" text-decoration-none"> <i
+                                        class="fa-sharp  mx-2 fa-solid fa-location-dot"></i> Flat 20,
+                                    Reynolds Neck, North Helenaville, FV77 8WS</a></li>
+                            <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none"> <i
+                                        class="fa-solid mx-2  fa-microphone"></i> +2(305)
+                                    587-3407</a></li>
+                            <li class="my-2"><a href="" style="color:#aeb1b8;" class=" text-decoration-none"><i
+                                        class="fa-solid fa-envelope mx-2 "></i>info@example.com</a></li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div> 
-    </div>
+        </div>
+
+        <div class="sub_footer pt-3">
+            <div class="container-fluid">
+                <div class="row justify-content-around  " style="color:#aeb1b8;
+                ">
+                    <div class="col-12 col-sm-4 col-md-4  text-center text-sm-start ">
+                        <small>Reet © 2023 All Right Reserved</small>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4    text-center text-sm-end">
+                        <a href="" class="text-decoration-none"><small style="color:#aeb1b8; ">Terms of
+                                Service</small></a> | <a href="" class="text-decoration-none"><small
+                                style="color:#aeb1b8; ">Privacy Policy</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src=" assets/bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
